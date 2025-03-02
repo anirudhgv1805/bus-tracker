@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 const Signup = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [role, setRole] = useState("admin"); // Default to admin role
+  const [role, setRole] = useState("admin"); 
   const [error, setError] = useState<string | null>(null);
   const navigate = useNavigate();
 
@@ -14,7 +14,7 @@ const Signup = () => {
     setError(null);
     try {
       await signUp(email, password, role);
-      navigate("/dashboard"); // Redirect to dashboard after signup
+      navigate("/dashboard"); 
     } catch (err: any) {
       setError(err.message);
     }
