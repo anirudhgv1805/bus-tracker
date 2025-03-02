@@ -10,7 +10,7 @@ import { useNavigate } from "react-router-dom";
 // });
 
 var busIcon = L.icon({
-  iconUrl: "./src/assets/bus.png",
+  iconUrl: "bus.png",
   //   shadowUrl: "./src/assets/bus.png",
 
   iconSize: [60, 95],
