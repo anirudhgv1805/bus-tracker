@@ -30,9 +30,9 @@ interface Bus {
 
 const MapPage = () => {
   const [buses, setBuses] = useState<Bus[]>([]);
-  const [mapCenter, setMapCenter] = useState<[number, number]>([
-    11.341, 77.7172,
-  ]);
+  //   const [mapCenter, setMapCenter] = useState<[number, number]>([
+  //     11.341, 77.7172,
+  //   ]);
   const navigate = useNavigate();
 
   useEffect(() => {
